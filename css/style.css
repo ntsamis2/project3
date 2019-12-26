@@ -1,0 +1,33 @@
+.bodydiv{
+    display: block;
+    text-align: center;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+#description{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#survey-form{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: auto;
+    background-color: black;
+    width: 600px;
+    color: white;
+    font-family: monospace;
+    font-size: x-large;
+}
+input{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(back.jpg);
+}
+#comments{
+    resize: none;
+    height: 150px;
+}

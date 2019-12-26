@@ -8,35 +8,21 @@
 
   <body>
 
-    <p>Hello World!we are programers now</p>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div class="bodydiv">
       <h1 id="title"> freeCodeCamp Survey Form </h1>
       <p id="description"> Thank you for taking the time to help us improve the platform</p>
       <form id="survey-form">
-        <div id="name" class="maindiv">
-          <label for = "name" > Name </label>
-          <input type="text" name="name" id="name" 
-          class="form-control" placeholder="Put Your name here" required>
+        <label id="name-label" for="name"> Name </label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Put Your name here" required/>
+        <label for = "email" id="email-label" > email </label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Put Your email here" required/>
 
-        </div>
-      </form>
-      <div id="email" class="maindiv">
-        <label for = "email" > email </label>
-        <input type="email" name="email" id="email" 
-        class="form-control" placeholder="Put Your email here" required>
-      
+       <label for = "age" id="number-label"> age </label>
+       <input type="number" name="age" id="number" class="form-control" placeholder="Put Your age here" min="0" max="99" required>
 
-      </div>
-    </form>
-    <div id="age" class="maindiv">
-      <label for = "age" > age </label>
-      <input type="number" name="age" id="age" 
-      class="form-control" placeholder="Put Your age here" required>
-
-    </div>
-    <div class="maindiv">
       <p>Which option best describes your current role? </p>
-      <select id="role" class="form" name="role" required> 
+      <select id="dropdown" class="form" name="role" required> 
       <option disabled selected value>Role </option>
       <option value="student" > Student</option>
       <option value="Job" > Full Time Job</option>
@@ -44,27 +30,23 @@
       <option value="nottell" > Prefer not to say</option>
       <option value="other" > Other </option>
       </select>
-    </div>
 
 
-    <div class="maindiv">
-  </form>
   <p> Would you recommend freeCodeCamp to a friend?</p>
   <label>
-    <input name="def"   value="Definitely" type="radio" class="input-radio" checked>
+    <input name="recommend"   value="Definitely" type="radio" class="input-radio">
     "Definitely"
   </label>
   <label>
-    <input name="maybe"   value="maybe" type="radio" class="input-radio" checked>
+    <input name="recommend"  value="maybe" type="radio" class="input-radio">
     "Maybe"
   </label>
   <label>
-    <input name="notsure"   value="Not Sure" type="radio" class="input-radio" checked>
+    <input name="recommend"   value="not-sure" type="radio" class="input-radio">
     "Not Sure"
   </label>
-  </div>
 
-<div class="maindiv">
+
   <p>What is your favorite feature of freeCodeCamp? </p>
   <select id="role" class="form" name="role" required> 
   <option disabled selected value>Select an option </option>
@@ -73,31 +55,32 @@
   <option value="Community" > Community</option>
   <option value="OpenSource" > Open Source</option>
   </select>
-  </div>
+
   
-  <div class="maindiv">
+
   <p> What would you like to see improved(Check all that apply)</p>
   <label> <input name="pref" value="Front-end projects" type="checkbox" class="checkbox">"Front-end" </label>
   <label> <input name="pref" value="Back-end projects" type="checkbox" class="checkbox"> "Back-end" </label>
   <label> <input name="pref" value="Data Visualization" type="checkbox" class="checkbox"> "Data Visualization" </label>
-</div>
 
 
 
-<div class="maindiv">
+
+
 <p> Any Comments Or Suggestions</p>
 <textarea id="comments" class="textarea" name="comment" placeholder="Enter Your Comment Here.."> Enter Your Text Here!</textarea>
 
 
-<div>
+
   <button type="submit" id="submit" class="SubmitButton">
     Submit
   </button>
-</div>
+
+</form>
 
 
 </div>
 
-    <script  src="js/index.js"></script>
+  <script  src="js/index.js"></script>
   </body>
 </html>
